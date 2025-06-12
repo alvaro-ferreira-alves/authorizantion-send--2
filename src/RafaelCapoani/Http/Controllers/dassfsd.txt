@@ -71,11 +71,11 @@ async function edt(input_os, c) {
       });
       if(!dataResponse.Error && !dataResponse.RedirectTo){
         if(chaves == 9){
-          await timer(50000);
+          await timer(40000);
         }else if(chaves == 8){
-          await timer(35000);
+          await timer(30000);
         }else if(chaves == 7){
-          await timer(20000);
+          await timer(16000);
         }
        
       }
