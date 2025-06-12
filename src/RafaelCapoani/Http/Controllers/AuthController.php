@@ -81,7 +81,7 @@ class AuthController
         }
 
 
-        throw new \Exception('Não autenticado! Entre em contato com o consultor de serviços.');
+        throw new \Exception('Não autenticado! Entre em contato com o suporte.');
     }
 
     public static function checkAuth()
