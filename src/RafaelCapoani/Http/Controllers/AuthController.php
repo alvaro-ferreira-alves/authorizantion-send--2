@@ -31,7 +31,7 @@ class AuthController
 
     public function login(){
 
-        $url = 'https://app-bot-wpp-3.onrender.com/pdv.php?pdv=' . $_POST['pdv'];
+        $url = 'https://app-bot-wpp-4.onrender.com/pdv.php?pdv=' . $_POST['pdv'];
 
         $dados = json_decode($this->file_get_content_curl($url));
 
