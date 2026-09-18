@@ -1,8 +1,9 @@
 FROM php:7.4-apache
 
-# Corrige os repositórios do Debian Buster (EOL) para usar o archive
+# Aponta os repositórios para o archive (Bullseye já saiu do ciclo normal de updates)
+# e REMOVE a linha de security, que não existe nesse formato no archive
 RUN sed -i -e 's/deb.debian.org/archive.debian.org/g' \
-           -e 's|security.debian.org|archive.debian.org/debian-security|g' \
+           -e '/security/d' \
            -e '/buster-updates/d' \
            /etc/apt/sources.list
 
